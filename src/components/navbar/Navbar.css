@@ -1,0 +1,48 @@
+.navbar {
+  background: #ffffff;
+  grid-area: nav;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav_icon {
+  display: none;
+}
+
+.nav_icon > i {
+  font-size: 26px;
+  color: #a5aaad;
+}
+.navbar__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 978px) {
+  .nav_icon {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar__left {
+    display: none;
+  }
+  .form-control{
+    display: none;
+  }
+}
+.btn-primary{
+  background:transparent;
+  color: black;
+  border: none;
+}
+.form-control{
+  border: none;
+  background-color:rgb(235, 240, 239) ;
+}

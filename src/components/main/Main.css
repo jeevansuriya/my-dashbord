@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+} 
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.content>h6{
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+.content h3{
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: 18px;
+}
+.fas{
+  font-size: 25px;
+  opacity: 0.1;
+}
+
+ .mainCardContent{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding: 0 10px;
+  padding-top: 18px;
+  align-items: center;
+}
+.card1 h6{
+  color: #4e73df;
+}
+.card2 h6{
+  color: #1cc88a;
+}
+.card3 h6{
+  color: #36b9cc;
+}
+.card4 h6{
+  color: #f6c23e;
+}
+
+.card1{
+  border-radius: 5px;
+ border-left: #4e73df 5px solid;
+ width: auto;
+ height: 90px;
+ background-color: white;
+}
+.card2{
+  border-radius: 5px;
+ border-left: #1cc88a 5px solid;
+  width: auto;
+ height: 90px;
+ background-color: white
+}
+.card3{
+  border-radius: 5px;
+ border-left: #36b9cc 5px solid;
+  width: auto;
+ height: 90px;
+ background-color: white
+}
+.card4{
+  border-radius: 5px;
+ border-left: #f6c23e 5px solid;
+  width: auto;
+ height: 90px;
+ background-color: white
+}
+.task-bar{
+  display: flex;
+}                                                                          
+
+.heading{
+  display: flex;
+  justify-content: space-between;
+}
+.fa-download{
+  font-size: 9px;
+  opacity: 0.5;
+  padding-right: 5px
+}
+.progress{
+  margin:10px;
+  height:6px;
+}
+.progressGrp{
+  height:12px
+}
+.tasksProgress{
+  display: flex;
+  flex-direction: column;
+}
+.tasksProgress>h3{
+  font-size:14px ;
+  font-weight:bold ;
+}
+.span{
+  color: #4e73df;
+}
+.illustrationImg{
+  max-width:350px;
+  width:100%;
+  padding: 10px;
+}
+.colorBox{
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+  row-gap:30px ;
+  column-gap: 20px;
+  padding: 20px 0;
+}
+
+.progressTitle{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  color:#858796;
+}
+.allTitle{
+  color:#4e73df;
+}
+ main {
+  background: #f3f4f6;
+  grid-area: main;
+  overflow-y: auto;
+}
+
+.main__container {
+  padding: 20px 35px;
+}
+
+.projectSection,.Illustration,.DevelopmentApproach,.lineChart,.piechart{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.lineChart{
+  min-width: 300px;
+  width: 100%;
+}
+.piechartContent{
+  display: flex;
+   justify-content: center; 
+   align-items: center;
+}
+.chartsContainer{
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  column-gap: 20px;
+}
+.illuDevApp{
+  color: #858796;
+}
+.piechart,.lineChart{
+  width: 100%;
+}
+
+
+@media (max-width:1150px) {
+.content{
+    grid-template-columns: 1fr;
+}
+.colorBox{
+  grid-template-columns: 1fr;
+}
+
+.cards{
+  grid-template-columns: 1fr;
+}
+.chartsContainer{
+  grid-template-columns: 1fr;
+}
+}
